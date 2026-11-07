@@ -5,7 +5,7 @@ FILE = Path("tasks.json")
 
 def load_tasks():
     if FILE.exists():
-        return json.loads(FILE.read_tex())
+        return json.loads(FILE.read_text())
     return []
 
 def save_tasks(tasks):
